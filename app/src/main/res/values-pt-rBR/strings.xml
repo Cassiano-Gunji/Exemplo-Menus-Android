@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exemplo Menus</string>
+    <string name="exibirMensagem">Exibe uma mensagem</string>
+    <string name="abrirNavegador">Abre um navegador</string>
+    <string name="sobre">Sobre</string>
+    <string name="mensgem">Esta é uma mensagem toast</string>
+</resources>
