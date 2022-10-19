@@ -28,35 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        boolean saida = true;
-        switch (item.getItemId()){
-            case R.id.menuItemMensagem:
-                exibaMensagem();
-                break;
-            case R.id.menuItemNavegador:
-                exibaNavegador();
-                break;
-            case R.id.menuItemSobre:
-                exibaSobre();
-                break;
-            default:
-                saida = super.onOptionsItemSelected(item);
+        boolean saida;
+        if (MenuPrincipal.trataMenu(this, item)) {
+            saida = true;
+        } else {
+            saida = super.onOptionsItemSelected(item);
         }
         return saida;
-    }
-
-    private void exibaMensagem(){
-        Toast.makeText(this, R.string.mensgem, Toast.LENGTH_SHORT).show();
-    }
-
-    private void exibaNavegador(){
-        Uri uri = Uri.parse("https://www.cruzeirodosul.edu.br");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
-
-    private void exibaSobre(){
-        Intent intent = new Intent(this, SobreActivity.class);
-        startActivity(intent);
     }
 }
