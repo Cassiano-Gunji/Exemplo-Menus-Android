@@ -1,2 +1,2 @@
-# Tutorial de Intent em Android
+# Tutorial de Menu em Android
 Este aplicativo é um exemplo do uso de menu em seu app. Ele deve ser criado por você ao seguir o roteiro na pasta [docs](docs).
