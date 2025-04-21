@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'br.edu.cruzeirodosul.exemplomenus'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "br.edu.cruzeirodosul.exemplomenus"
-        minSdk 16
-        targetSdk 34
+        minSdk 21
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
